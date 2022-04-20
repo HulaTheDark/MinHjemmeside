@@ -1,38 +1,95 @@
 <!DOCTYPE html>
 <html lang="dk">
 <head>
-  <title>Bootstrap 5 Example</title>
+  <title>Min Hjemmeside</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-<div class="container-fluid p-5 bg-primary text-black text-center">
+<!-- Hjemmeside overskrift bg = bagrundsfarve, text = text farve, boder = kant -->
+<div class="container-fluid p-5 bg-primary text-black text-center border">
   <h1>Velkommen til Michael´s hjemmeside</h1>
-  <p>Datatekninker med speciale indenfor programmering</p> 
+  <p>Datatekninker elev med speciale i programmering</p> 
 </div>
-  
-<div class="container mt-5">
+  <!-- Navigationsbar når der bliver kørt ned på siden sætter den sig fast og skulle gerne gå til top når der trykkes på "Home"  -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+	<div class="container-fluid">
+	<a class="navbar-brand" href="https://github.com/HulaTheDark/MinHjemmeside/index.html">Home</a>
+	<button class"navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+	 <span class="navbar-toggler-icon"></span>
+	 </button>
+	<div class="collapse navbar-collapse" id="mynavbar">
+	 <ul class="navbar-nav me-auto">
+	 <li class="nav-item">
+		<a class="nav-link" href="#"> Uninty</a>
+	 </li>
+	 <li class="nav-item">
+		<a class="nav-link" href="#"> Blender</a>
+	 </li>
+	 <li class="nav-item">
+		<a class="nav-link" href="#"> C# console apps</a>
+	 </li>
+	 </ul>
+	<form class="d-flex">
+	<input class="form-control me-2" type="text" placeholder="Search">
+	<button class="btn btn-primary" type="button">Search</button>
+	</form>
+	</div>
+	</div>
+
+</nav>
+
+<div class="container-fluid bg-info">
   <div class="row">
-    <div class="col-sm-4">
-      <h3>Om mig</h3>
-      <p>Jeg er en glad og smilende person på 27 år, som godt kan lide at tage fat når jeg arbejder.<p>
-	  <p>Jeg bruger tid sammen med mine venner og familie når tiden er til det.<p>
-	  <p>Jeg har en stor passion for elektronik og flair for it både med at samle og lave pc´er og mobiler, ikke nok med det er en af mine store drømme at blive programmør indenfor Gaming og appudvikling, og derfor er jeg i gang med at tage uddannelsen som datateknikker med speciale inden for programmering.</p>
+  <h2 class="text-primary text-center">Her er lidt info om mig</h2>
+    <div class="bg-info text-secondary col-sm-5 p-3">
+      <p>Mit navn er Michael, jeg har gennemført grundforløb 2 af data- og kommunikations og er startet i skoleoplærings centeret TEC også kendt som skolepraktik centret.<p>
+	  <p>Jeg har altid været glad for elektronik, og er god til både at skille det ad og samle det igen, samt supportere diverse enheder, det er også derfor min familie og venner kontakter mig angående deres elektronik.<p>
+	  <p>Når der er tid og ro til det sidder jeg også lidt med både Blender og Unity.</p>
     </div>
-    <div class="col-sm-4">
-      <h3>Billede</h3>
-      <img src="https://github.com/HulaTheDark/MinHjemmeside/blob/main/Billeder/Mig.png" class="rounded" alt="Mig" width="250" height="250"> 
+	<div class="bg-info text-secondary col-sm-5 p-3">
+      <p>Mine fritids interesser er Gaming, venner, familie og fitness.<p>
+	  <p>Jeg har arbejdet som support i knowhow Taastrup i 2 år.<p>
+	  <p>Efter et næsten færdigt grundforløb som smed har jeg et amu-kursus i arbejdsmiljø og sikkerhed svejsning/termisk #44530</p>
     </div>
-    <div class="col-sm-4">
-      <h3>Projekter</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
+	<div class="bg-info text-secondary col-sm-2">
+		<h3>Billede</h3>
+		<img src="https://github.com/HulaTheDark/MinHjemmeside/blob/main/Billeder/Mig.png" class="rounded" alt="Mig" width="250" height="250"> 
+	</div>
   </div>
 </div>
 
+<!-- Projekter område -->
+<div class="container-fluid bg-success">
+  <div class="row">
+	<h2 class="text-center">Projekter</h2>
+	<div class="col">
+		 <h3 class="text-center">Unity<h3>  
+		<p></p>
+		<p></p>
+		</div>
+	<div class="col">
+		 <h3 class="text-center">Blender<h3>  
+		<p></p>
+		<p></p>
+	</div>
+	<div class="col">
+		 <h3 class="text-center">C# console apps<h3>  
+		<p></p>
+		<p></p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid bg-secondary">
+  <div class="row">
+    <div class="text-warning text-center col">
+	  <h2>Lige en lille heads up.<h2>
+      <p>Efter et fald som arbjdsmand fik jeg et slag i ryggen som nu har givet mig en kronisk sygdom.<p>
+	  <p>Jeg skriver dette så i er forberedt på at jeg godt kan have brug for nogle ergonomiske værktøjer til arbejdet.<p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
