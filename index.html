@@ -11,15 +11,24 @@
 	display: flex;
 	background-color: #f1f1f1;
 }
-.flex-container > div {
-	  background-color: DodgerBlue;
-  color: white;
-  width: 200px;
+.flex-container2 > div {
+  background-color: rgb(58, 117, 175);
+  color: rgb(255, 255, 255);
+  width: 150px;
   margin: 10px;
+  vertical-align: text-top;
   text-align: center;
-  line-height: 300px;
-  font-size: 30px;
+  line-height: 100px;
+  font-size: 20px;
   }
+  div .padding {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
   </style>
 </head>
 <body>
@@ -36,7 +45,7 @@
 	<div class="collapse navbar-collapse" id="mynavbar">
 	 <ul class="navbar-nav me-auto">
 	 <li class="nav-item">
-		<a class="nav-link" href="#"> Uninty</a>
+		<a class="nav-link" href="#"> Unity</a>
 	 </li>
 	 <li class="nav-item">
 		<a class="nav-link" href="#"> Blender</a>
@@ -57,50 +66,61 @@
   
 <div class="container-fluid bg-info">
   <div class="row">
-  
   <h2 class="text-primary text-center">Her er lidt info om mig</h2>
-    <div class="bg-info text-secondary col-sm-5 p-3">
+  <div class="col-sm-2 p-3">
+	<!-- Flex-container items -->
+	<div class="flex-container2"></div>
+	<div class="row padding">
+		<div class="btn-group-vertical ">
+			<h4>Hurtig navigering</h4>
+			<div>
+				<h5 class="text-center">Billede</h5>
+				<img src="C:/Users/micric/Desktop/Site/MinHjemmeside/Billeder/Mig.png" class="rounded" alt="Mig" width="210" height="180"> 
+			</div>
+		<button type="button" class="btn btn-primary btn-sm" > Lidt om mig </button>
+		<button type="button" class="btn btn-primary btn-sm "> Projekter </button>
+		<button type="button" class="btn btn-primary btn-sm"> Kontakt </button>
+		</div>
+		</div>
+	</div>
+
+    <div class="bg-info col-sm-5 p-3">
       <p>Mit navn er Michael, jeg har gennemført grundforløb 2 af data- og kommunikations og er startet i skoleoplærings centeret TEC også kendt som skolepraktik centret.<p>
 	  <p>Jeg har altid været glad for elektronik, og er god til både at skille det ad og samle det igen, samt supportere diverse enheder, det er også derfor min familie og venner kontakter mig angående deres elektronik.<p>
 	  <p>Når der er tid og ro til det sidder jeg også lidt med både Blender og Unity.</p>
     </div>
-	<div class="bg-info text-secondary col-sm-5 p-3">
+	<div class="bg-info  col-sm-5 p-3">
       <p>Mine fritids interesser er Gaming, venner, familie og fitness.<p>
 	  <p>Jeg har arbejdet som support i knowhow Taastrup i 2 år.<p>
 	  <p>Efter et næsten færdigt grundforløb som smed har jeg et amu-kursus i arbejdsmiljø og sikkerhed svejsning/termisk #44530</p>
     </div>
-	<div class="bg-info text-secondary col-sm-2">
-		<h3>Billede</h3>
-		<img src="https://github.com/HulaTheDark/MinHjemmeside/blob/main/Billeder/Mig.png" class="rounded" alt="Mig" width="250" height="250"> 
-	</div>
   </div>
 </div>
-<!-- Flex-container items -->
-<div class="flex-container">
-	<div> Lidt om mig </div>
-</div>
+
+
+
 <!-- Projekter område -->
 <div class="container-fluid bg-success">
   <div class="row">
 	<h2 class="text-center">Projekter</h2>
 	<div class="col">
-		 <h3 class="text-center">Unity<h3>  
+		 <h3 class="text-center"><button type="button" class="btn btn-outline-dark btn-lg">Unity</button><h3>  
 		<p></p>
 		<p></p>
 		</div>
 	<div class="col">
-		 <h3 class="text-center">Blender<h3>  
+		<h3 class="text-center"><button type="button" class="btn btn-outline-dark btn-lg">Blender</button><h3>  
 		<p></p>
 		<p></p>
 	</div>
 	<div class="col">
-		 <h3 class="text-center">C# console apps<h3>  
+		<h3 class="text-center"><button type="button" class="btn btn-outline-dark btn-lg">C# console apps</button><h3>  
 		<p></p>
 		<p></p>
 		</div>
 	</div>
 </div>
-<div class="container-fluid bg-secondary">
+<div class="footer bg-secondary">
   <div class="row">
     <div class="text-warning text-center col">
 	  <h2>Lige en lille heads up.<h2>
